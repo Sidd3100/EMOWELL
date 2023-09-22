@@ -21,11 +21,14 @@ body {
   color: white;
   top: 0;
 } */
-li  {
+li {
   font-size: 1.2rem;
-  
 }
-#navbarSupportedContent{
-  margin-left: 49rem;
+.fas{
+  margin-left: 1.2rem;
 }
-
+@media (min-width: 913px) {
+  #navbarSupportedContent {
+    margin-left: 49rem;
+  }
+}
