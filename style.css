@@ -32,3 +32,10 @@ li {
     margin-left: 49rem;
   }
 }
+@media (min-width: 1285px) {
+  #navbarSupportedContent {
+    margin-left: 55rem;
+  }
+}
+
+
