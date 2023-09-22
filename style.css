@@ -6,36 +6,55 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  background-color: #a2c579;
+  background-color: #a2c579 !important;
 }
 
-/* ul {
-  background-color: #016a70;
-  list-style-type: none;
-  overflow: hidden;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.552);
-  padding: 0.5em 0.5rem 0.1em;
-  position: fixed;
-  width: 100%;
-  color: white;
-  top: 0;
-} */
 li {
   font-size: 1.2rem;
 }
-.fas{
+
+/* Font Awesome icons */
+.fas {
   margin-left: 1.2rem;
 }
-@media (min-width: 913px) {
-  #navbarSupportedContent {
-    margin-left: 49rem;
-  }
+
+/* Navbar styles */
+.navbar.navbar-light.bg-light {
+  background-color: #a2c579 !important; /* Light blue color for navbar */
 }
-@media (min-width: 1285px) {
-  #navbarSupportedContent {
-    margin-left: 55rem;
-  }
+.navbar.navbar-light.bg-light .navbar-nav .nav-link,
+.navbar.navbar-light.bg-light .navbar-brand {
+  color: white !important; /* White color for navbar text */
+}
+/* Navbar links and hover animation */
+.navbar-nav .nav-link {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 7px;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
+/* Underline animation */
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #d2de32;
+  transition: width 0.3s ease;
+  transform-origin: left;
+}
 
+/* Hover effect */
+.navbar-nav .nav-link:hover::before {
+  width: 100%;
+  transform-origin: right;
+}
+.navbar .navbar-nav .nav-link.nav-item:hover {
+  color: #D2DE32 !important; /* Change text color on hover */
+}
