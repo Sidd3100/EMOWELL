@@ -19,7 +19,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(#a2c579,  #a2c579);
+    background:linear-gradient(135deg ,#016A70,  #a2c579) !important;
     /* url('../img/mental-health-7323725_640.png') */
     background-size: cover;
     background-position: center;

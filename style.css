@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #a2c579 !important;
+  background:linear-gradient(135deg ,#016A70,  #a2c579) !important;
 }
 p,
 h1 {
@@ -27,7 +27,7 @@ li {
 
 /* Navbar styles */
 .navbar.navbar-light.bg-light {
-  background-color: #a2c579 !important;
+  background-color: #016A70 !important;
 }
 .navbar.navbar-light.bg-light .navbar-nav .nav-link,
 .navbar.navbar-light.bg-light .navbar-brand {
