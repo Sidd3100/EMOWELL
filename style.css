@@ -27,7 +27,8 @@ li {
 
 /* Navbar styles */
 .navbar.navbar-light.bg-light {
-  background-color: #016A70 !important;
+  /* background-color: #016A70 !important; */
+  background:linear-gradient(45deg ,#016A70,  #a2c579) !important;
 }
 .navbar.navbar-light.bg-light .navbar-nav .nav-link,
 .navbar.navbar-light.bg-light .navbar-brand {
