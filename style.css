@@ -10,7 +10,12 @@
 body {
   background-color: #a2c579 !important;
 }
-
+p,
+h1 {
+  color: black;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 li {
   font-size: 1.2rem;
 }
@@ -22,11 +27,12 @@ li {
 
 /* Navbar styles */
 .navbar.navbar-light.bg-light {
-  background-color: #a2c579 !important; /* Light blue color for navbar */
+  background-color: #a2c579 !important;
 }
 .navbar.navbar-light.bg-light .navbar-nav .nav-link,
 .navbar.navbar-light.bg-light .navbar-brand {
   color: white !important; /* White color for navbar text */
+  cursor: pointer;
 }
 /* Navbar links and hover animation */
 .navbar-nav .nav-link {
@@ -56,5 +62,81 @@ li {
   transform-origin: right;
 }
 .navbar .navbar-nav .nav-link.nav-item:hover {
-  color: #D2DE32 !important; /* Change text color on hover */
+  color: #d2de32 !important;
+}
+/* CSS for decreasing navbar height */
+.navbar {
+  transition: transform 0.7s ease-in-out;
+}
+
+.navbar-brand {
+  padding: 0 15px !important;
+  line-height: 25px !important;
+}
+
+.navbar-nav .nav-link {
+  padding: 5px 15px !important;
+  line-height: 25px !important;
+}
+/* .landing-section */
+.landing-section {
+  padding: 10rem 5rem;
+  height: 1000px;
+  color: white;
+  font-size: xx-large;
+}
+.landing-page {
+  padding-left: 10rem;
+}
+.type {
+  font-family: monospace;
+  color: #0000;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  background: linear-gradient(-90deg, #ffffdd 5px, #0000 0) 10px 0,
+    linear-gradient(#ffffdd 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1),
+    t calc(var(--n) * 0.15s) steps(var(--n)) forwards;
+}
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+/* carousel section */
+/* Custom CSS for modifying carousel height and width */
+.carousel {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  height: 500px;
+}
+
+.carousel-item {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.haha {
+  height: 700px;
 }
