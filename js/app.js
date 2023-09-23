@@ -12,21 +12,19 @@ window.onscroll = function () {
   prevScrollPos = currentScrollPos;
 };
 
-// Wait for the document to load
-document.addEventListener("DOMContentLoaded", function () {
-  // Replace 'aboutthing.json' with the path to your Lottie JSON file
-  const animationPath = "aboutthing.json";
+// for smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-  // Replace 'lottie-container' with the ID of your container element
-  const container = document.getElementById("lottie-container");
+    const targetId = this.getAttribute("href").substring(1);
+    const target = document.getElementById(targetId);
 
-  // Load and play the Lottie animation
-  lottie.loadAnimation({
-    container: container,
-    renderer: "svg", // Use 'svg' or 'canvas' depending on your preference
-    loop: true, // Set to true if you want the animation to loop
-    autoplay: true, // Set to true to start playing the animation immediately
-    path: animationPath,
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: "smooth",
+      });
+    }
   });
 });
-
