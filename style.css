@@ -112,6 +112,12 @@ li {
   animation: b 0.7s infinite steps(1),
     t calc(var(--n) * 0.15s) steps(var(--n)) forwards;
 }
+@media screen and (max-height: 600px) {
+ .type{
+  letter-spacing: 0.1rem;
+ }
+}
+
 @keyframes t {
   from {
     background-size: 0 200%;
