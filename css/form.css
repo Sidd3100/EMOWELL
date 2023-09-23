@@ -43,7 +43,7 @@ body{
 }
 
 input,
-.submit-btn{
+.submit-btn,.home-btn{
     opacity: 0;
     width: 80%;
     height: 35px;
@@ -63,22 +63,37 @@ input::placeholder{
 }
 
 input:focus,
-.submit-btn:hover{
+.submit-btn:hover,.home-btn:hover{
     background: #fff;
     color: #000;
 }
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.home-btn .home-link:hover{
+    color: black;
+}
+
 
 input:focus::placeholder{
     color: #000;
 }
 
-.submit-btn{
+.submit-btn,.home-btn{
     width: auto;
     padding: 0 20px;
     cursor: pointer;
     margin: 50px auto 0;
     opacity: 0;
 }
+.submit-btn:hover,.home-btn:hover {
+    transform: scale(1.1); /* Increase size by 5% when hovering */
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.7);
+  }
+
+
 
 .link{
     opacity: 0;
