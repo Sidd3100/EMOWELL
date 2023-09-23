@@ -90,6 +90,7 @@ li {
   font-size: xx-large;
   font-weight: 700;
 }
+
 /* Set a minimum width for the left and right sections */
 .landing-page {
   min-width: 300px; /* Adjust the minimum width as needed */
@@ -143,10 +144,10 @@ li {
 
 /* about-section */
 .about-section h3 {
-  text-align: center; 
+  text-align: center;
 }
 .about-section p {
-  text-align: justify; 
+  text-align: justify;
   padding: 0 10px;
 }
 .about-section {
@@ -165,64 +166,62 @@ li {
 
 /* You can customize these styles to match your design */
 
-.footer{
-	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
+.footer {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
   background: linear-gradient(110deg, #143d3f, #81a156);
   padding: 20px 0;
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
-ul{
-	list-style: none;
+ul {
+  list-style: none;
 }
 
-.footer-col h4{
-	font-size: 1em;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
+.footer-col h4 {
+  font-size: 1em;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
 }
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #e91e63;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
 }
-.footer-col ul li{
-	color: white;
+.footer-col ul li {
+  color: white;
 }
 
-
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
 }
 
 /*responsive*/
-@media(max-width: 767px){
-  .footer-col{
+@media (max-width: 767px) {
+  .footer-col {
     margin-bottom: 30px;
+  }
 }
-}
-
