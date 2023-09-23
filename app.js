@@ -12,8 +12,20 @@ window.onscroll = function () {
   prevScrollPos = currentScrollPos;
 };
 
-// for (let i = 0; i < lines.length; i++) {
-//   setTimeout(() => {
-//     typewriter(lines[i], `line${i + 1}`, 100);
-//   }, i * 2000); // Adjust the delay as needed
-// }
+// Wait for the document to load
+document.addEventListener("DOMContentLoaded", function () {
+  // Replace 'aboutthing.json' with the path to your Lottie JSON file
+  const animationPath = "aboutthing.json";
+
+  // Replace 'lottie-container' with the ID of your container element
+  const container = document.getElementById("lottie-container");
+
+  // Load and play the Lottie animation
+  lottie.loadAnimation({
+    container: container,
+    renderer: "svg", // Use 'svg' or 'canvas' depending on your preference
+    loop: true, // Set to true if you want the animation to loop
+    autoplay: true, // Set to true to start playing the animation immediately
+    path: animationPath,
+  });
+});
