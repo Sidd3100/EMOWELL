@@ -80,14 +80,15 @@ li {
 }
 /* .landing-section */
 .landing-section {
-  padding: 10rem 5rem;
+  padding-top: 9rem;
   height: 1000px;
   color: white;
   font-size: xx-large;
+  font-weight: 700;
 }
-.landing-page {
+/* .landing-page {
   padding-left: 10rem;
-}
+} */
 .type {
   font-family: monospace;
   color: #0000;
