@@ -124,6 +124,7 @@ li {
   background-color: #4156297b !important;
   color: #ffffdd !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add transition properties */
+  margin-bottom: 2em;
 }
 
 .card:hover {
