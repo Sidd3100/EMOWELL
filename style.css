@@ -8,7 +8,7 @@
 }
 
 body {
-  background:linear-gradient(135deg ,#016A70,  #a2c579) !important;
+  background: linear-gradient(110deg, #016a70, #a2c579) !important;
 }
 p,
 h1 {
@@ -28,12 +28,15 @@ li {
 /* Navbar styles */
 .navbar.navbar-light.bg-light {
   /* background-color: #016A70 !important; */
-  background:linear-gradient(45deg ,#016A70,  #a2c579) !important;
+  background: linear-gradient(110deg, #016a70, #a2c579) !important;
 }
 .navbar.navbar-light.bg-light .navbar-nav .nav-link,
 .navbar.navbar-light.bg-light .navbar-brand {
   color: white !important; /* White color for navbar text */
   cursor: pointer;
+  font-family: monospace;
+  font-size: larger;
+  font-weight: 700;
 }
 /* Navbar links and hover animation */
 .navbar-nav .nav-link {
@@ -122,7 +125,7 @@ li {
 }
 /* cards section */
 .card {
-  background-color: #4156297b !important;
+  background-color: #485c317b !important;
   color: #ffffdd !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add transition properties */
   margin-bottom: 2em;
@@ -135,7 +138,8 @@ li {
 
 .card-text {
   color: #ffffdd !important;
+  font-weight: 300;
 }
-.haha {
-  height: 200px;
-}
+
+/* wave-section */
+
