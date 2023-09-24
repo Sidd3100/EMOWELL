@@ -12,8 +12,21 @@ window.onscroll = function () {
   prevScrollPos = currentScrollPos;
 };
 
-// for (let i = 0; i < lines.length; i++) {
-//   setTimeout(() => {
-//     typewriter(lines[i], `line${i + 1}`, 100);
-//   }, i * 2000); // Adjust the delay as needed
-// }
+// for smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute("href").substring(1);
+    const target = document.getElementById(targetId);
+
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  });
+});
+
+

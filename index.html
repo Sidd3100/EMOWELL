@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EmoWell</title>
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -15,8 +14,14 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/f54de46d1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- navbar section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <span class="navbar-brand" id="logo"
         ><i class="fas fa-brain fa-2x"></i>
@@ -36,13 +41,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="#contact">Contact Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html">Login</a>
@@ -51,9 +56,10 @@
       </div>
     </nav>
 
-    <div class="container landing-section">
-      <div class="row">
-        <div class="col-md-6">
+    <!-- land-page-section -->
+    <div class="container-fluid landing-section">
+      <div class="row align-items-center">
+        <div class="col-md-6 p-4 text-lg">
           <!-- Left column content -->
           <div class="landing-page">
             <h1>
@@ -64,37 +70,51 @@
             </h1>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 p-4 text-md">
           <!-- Right column content -->
           <div class="landing-page">
-            <img src="mainL.png" alt="" />
+            <img src="img/mainL.png" alt="" class="img-fluid" />
           </div>
         </div>
       </div>
     </div>
+
+    <!-- card-section -->
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-12 col-md-4">
           <div class="card">
-            <img src="card1img.png" class="card-img-top" alt="Card Image 1" />
+            <img
+              src="img/card1img.png"
+              class="card-img-top"
+              alt="Card Image 1"
+            />
             <div class="card-body">
               <a href=""><h5 class="card-title">Learn more</h5></a>
               <p class="card-text">Designed to baffle the human mind.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-12 col-md-4">
           <div class="card">
-            <img src="card2img.png" class="card-img-top" alt="Card Image 2" />
+            <img
+              src="img/card2img.png"
+              class="card-img-top"
+              alt="Card Image 2"
+            />
             <div class="card-body">
               <a href=""><h5 class="card-title">Learn more</h5></a>
               <p class="card-text">Guiding the soul through meditation.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-12 col-md-4">
           <div class="card">
-            <img src="card3img.png" class="card-img-top" alt="Card Image 3" />
+            <img
+              src="img/card3img.png"
+              class="card-img-top"
+              alt="Card Image 3"
+            />
             <div class="card-body">
               <a href=""><h5 class="card-title">Learn more</h5></a>
               <p class="card-text">Exploring the depths of human thought.</p>
@@ -104,7 +124,115 @@
       </div>
     </div>
 
-    <script src="app.js"></script>
+    <!-- About Us -->
+    <div class="about-section" id="about">
+      <h3>Our objective</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+        rem possimus enim voluptatibus qui quae minus, ratione, dolorem cumque
+        autem incidunt animi. Accusantium beatae error, consectetur sint
+        nesciunt assumenda ullam. Suscipit accusantium iste libero voluptatem
+        quo, beatae molestias excepturi minus ex molestiae, temporibus nulla
+        ipsum delectus asperiores eligendi totam culpa earum, itaque eveniet
+        eius quam? Vero, excepturi? Rerum, neque aspernatur! Maxime architecto
+        reiciendis repellat enim ipsam officiis porro commodi. Quisquam,
+        blanditiis eum? Ipsa itaque id, blanditiis ea perferendis aliquam non,
+        optio hic, quas quam nam assumenda quod inventore dolorum quibusdam.
+        Numquam enim amet consectetur fugit expedita alias placeat doloremque
+        beatae totam dicta, quis culpa veniam facilis quasi ipsa ipsum facere
+        tempore sint ducimus dignissimos blanditiis eius laudantium magnam
+        rerum. Quisquam? Natus laudantium labore earum cum eius porro tenetur
+        accusantium. Optio dicta, quia dolorem dolorum inventore animi enim iste
+        est quis ipsam voluptatum quisquam corporis, dignissimos laudantium!
+        Eveniet et quasi exercitationem. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Exercitationem, rem possimus enim voluptatibus qui
+        quae minus, ratione, dolorem cumque autem incidunt animi. Accusantium
+        beatae error, consectetur sint nesciunt assumenda ullam. Suscipit
+        accusantium iste libero voluptatem quo, beatae molestias excepturi minus
+        ex molestiae, temporibus nulla ipsum delectus asperiores eligendi totam
+        culpa earum, itaque eveniet eius quam? Vero, excepturi? Rerum, neque
+        aspernatur! Maxime architecto reiciendis repellat enim ipsam officiis
+        porro commodi. Quisquam, blanditiis eum? Ipsa itaque id, blanditiis ea
+        perferendis aliquam non, optio hic, quas quam nam assumenda quod
+        inventore dolorum quibusdam. Numquam enim amet consectetur fugit
+        expedita alias placeat doloremque beatae totam dicta, quis culpa veniam
+        facilis quasi ipsa ipsum facere tempore sint ducimus dignissimos
+        blanditiis eius laudantium magnam rerum. Quisquam? Natus laudantium
+        labore earum cum eius porro tenetur accusantium. Optio dicta, quia
+        dolorem dolorum inventore animi enim iste est quis ipsam voluptatum
+        quisquam corporis, dignissimos laudantium! Eveniet et quasi
+        exercitationem.
+      </p>
+    </div>
+
+    <footer class="footer" id="contact">
+      <div class="footer-col">
+        <h4>Priyansh Jain</h4>
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin fa-beat-fade"></i></a>Linked In
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github fa-beat-fade"></i></a>Github
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-envelope fa-beat-fade"></i></a>Email
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Madhav Bansal</h4>
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin fa-beat-fade"></i></a>Linked In
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github fa-beat-fade"></i></a>Github
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-envelope fa-beat-fade"></i></a>Email
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Saumitra Upadhyay</h4>
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin fa-beat-fade"></i></a>Linked In
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github fa-beat-fade"></i></a>Github
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-envelope fa-beat-fade"></i></a>Email
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Siddharta Rai</h4>
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin fa-beat-fade"></i></a>Linked In
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github fa-beat-fade"></i></a>Github
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-envelope fa-beat-fade"></i></a>Email
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="js/app.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

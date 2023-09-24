@@ -7,3 +7,11 @@ form.forEach((item, i) => {
     item.style.opacity = 1;
   }, i * 100);
 });
+
+let homebtn = document.querySelector(".home-btn");
+
+homebtn.addEventListener("click", function () {
+  setTimeout(() => {
+    document.location.href = "index.html";
+  }, 300);
+});

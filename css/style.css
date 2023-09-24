@@ -9,11 +9,12 @@
 
 body {
   background: linear-gradient(110deg, #016a70, #a2c579) !important;
+  overflow-x: hidden;
 }
+
 p,
 h1 {
-  color: black;
-  font-weight: 700;
+  font-weight: 300;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 li {
@@ -90,6 +91,7 @@ li {
   font-size: xx-large;
   font-weight: 700;
 }
+
 /* Set a minimum width for the left and right sections */
 .landing-page {
   min-width: 300px; /* Adjust the minimum width as needed */
@@ -128,7 +130,7 @@ li {
   background-color: #485c317b !important;
   color: #ffffdd !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add transition properties */
-  margin-bottom: 2em;
+  margin-bottom: 10em;
 }
 
 .card:hover {
@@ -141,5 +143,84 @@ li {
   font-weight: 300;
 }
 
-/* wave-section */
+/* about-section */
+.about-section h3 {
+  text-align: center;
+}
+.about-section p {
+  text-align: justify;
+  padding: 0 10px;
+}
+.about-section {
+  background: linear-gradient(110deg, #1f5a5d, #6e8155);
+  color: #ffffdd;
+  margin: 9rem 7rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px 20px;
+  border-radius: 12px;
+}
+/* footer and contactus-section */
+.footer {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(110deg, #143d3f, #81a156);
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
+ul {
+  list-style: none;
+}
+
+.footer-col h4 {
+  font-size: 1em;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li {
+  color: white;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  transform: scale(1.1); /* Increase size by 5% when hovering */
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.7);
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    margin-bottom: 30px;
+  }
+}
