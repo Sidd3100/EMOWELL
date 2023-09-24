@@ -154,19 +154,15 @@ li {
 .about-section {
   background: linear-gradient(110deg, #1f5a5d, #6e8155);
   color: #ffffdd;
-  margin: 3rem 1rem; /* Reduce margin for smaller screens */
+  margin: 9rem 7rem; 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2px 15px;
+  padding: 12px 20px;
   border-radius: 12px;
-  animation: none; /* Initially, no animation */
-  will-change: transform; /* Improve animation performance */
 }
-
-/* You can customize these styles to match your design */
-
+/* footer and contactus-section */
 .footer {
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
